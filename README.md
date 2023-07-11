@@ -1,2 +1,2 @@
-# Batleship
+# Battleship
 Battleship game
