@@ -1,11 +1,12 @@
-
 from random import randint
 
-NO_USER_GUESS=5
-
+guesses = 5
 num = int(input("Enter your grid size: "))
-
+validRows =  num
+validColumns = num
 board = []
+
+turn=0 
 
 def print_board(board):
     print ("Let's Play Battleship!")
@@ -18,30 +19,46 @@ for z in board:
     print(*z)
     
 def shiplocation():
-    for placement in range(num):
-        inputRow = input("Place your ship in a row: \n")
-        break
-    if inputRow not in range(num):
+    inputRow = int(input("Place your ship in a row: \n"))
+    if inputRow not in range(validRows +1):
             print ("Enter a valid row number.")
             inputRow = input("Place your ship in a row: \n")
-    for placement in range(num):        
-        inputColumn = input("Place your ship in a column: \n")
-        break
-    if inputColumn not in range(num):
+    inputColumn = int(input("Place your ship in a column: \n"))
+    if inputColumn not in range(validColumns +1):
             print("Enter a valid column number.")
             inputColumn = input("Place your ship in a column: \n")
-    
 shiplocation()
+print ("Your ship has been placed. Buena Suerte!")
 
-# range() is columns
+def randomRow(board):
+    return randint(0,len(board)-1)
 
-turn = 0
-for attempt in range(NO_USER_GUESS):
-    guessRow = int(input("Guess Row:"))
-    guessColumn = int(input("Guess Col:"))
+def randomColumn(board):
+    return randint(0,len(board)-1)
 
-#if guessRow == NO_USER_GUESS and guessColumn == shiplocation:
-      #print ("Hit")
-#else:
-   # if (guessRow < range(num) or guessRow > range(num)) or (guessColumn < range(num) or guessColumn > range(num)):
-    #      print ("Enter a Valid Number")
+shipRow=randomRow(board)
+shipColumn=randomColumn(board)
+
+print(shipRow)
+print(shipColumn)
+
+turn=0
+for turn in range(guesses):
+    print ("Turn:", turn + 1)
+    
+    guessRow = int(input("Guess a Row:"))
+    guessColumn = int(input("Guess a Column:"))
+
+    if guessRow == shipRow and guessColumn == shipColumn:
+        print ("Hit!")
+    else:
+        if (guessRow not in range(num)) or (guessColumn not in range(num)):
+            print ("Enter a Valid Number")
+        elif(board[guessRow][guessColumn] == "X"):
+            print ("Already Hit")
+        else:
+            print ("Miss!")
+            board[guessRow][guessColumn] = "X"
+            print("Try Again")
+            
+        print_board(board)
