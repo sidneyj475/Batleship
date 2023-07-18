@@ -2,10 +2,10 @@
 import random
 
 def print_board(board):
-    for row in board:
-        print(" ".join(row))
+    for z in board:
+        print(" ".join(z))
 
-###we tried to allow for letting the user choose between random and deliberate placement, but we couldn't get it done in time and commented it out####
+###We tried to allow for letting the user choose between random and deliberate placement, but we couldn't get it done in time and commented it out####
 
 def makelo(board):
     #choice = (input("Would you like to place your ships?: y/n: "))
