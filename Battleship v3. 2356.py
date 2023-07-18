@@ -6,7 +6,11 @@ def print_board(board):
         print(" ".join(row))
 
 def makelo(board):
-    return random.randint(1, len(board)), random.randint(1, len(board[0]))
+    choice = (input("Would you like to place your ships?: y/n"))
+    if choice is ("n"):
+        return random.randint(1, len(board)), random.randint(1, len(board[0]))
+    else:
+        
 
 def inputthatthang(grid):
     while(True):
