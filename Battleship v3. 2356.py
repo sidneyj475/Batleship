@@ -5,13 +5,19 @@ def print_board(board):
     for row in board:
         print(" ".join(row))
 
-def makelo(board):
-    choice = (input("Would you like to place your ships?: y/n"))
-    if choice is ("n"):
-        return random.randint(1, len(board)), random.randint(1, len(board[0]))
-    else:
-        
+###we tried to allow for letting the user choose between random and deliberate placement, but we couldn't get it done in time and commented it out####
 
+def makelo(board):
+    #choice = (input("Would you like to place your ships?: y/n: "))
+    #if choice == ("n"):
+        return random.randint(1, len(board)), random.randint(1, len(board[0]))
+    #if choice == ("y"):
+        #inputrow=int(input("row: "))
+        #inputcol=int(input("col: "))
+        #if (inputrow > grid) and (inputcol > grid):
+            #print("enter valid inputs")
+
+        
 def inputthatthang(grid):
     while(True):
         try:
@@ -35,10 +41,10 @@ for i in range(grid):
 
 
 
+RowRowRow, ColColCol = makelo(board) 
 
-RowRow, ColCol = makelo(board) 
 
-for LAUNCH in range(4):
+for LAUNCH in range(6):
 
     if LAUNCH == 5:
         print("Game Over.")
@@ -50,7 +56,7 @@ for LAUNCH in range(4):
     
     GuessRow, GuessColumn = inputthatthang(grid)
 
-    if GuessRow + 1 == RowRow and GuessColumn + 1 == ColCol:
+    if GuessRow + 1 == RowRowRow and GuessColumn + 1 == ColColCol:
         print("\nWow! You sunk an enemy ship!")
         board[GuessRow][GuessColumn] = "X"
         print_board(board)
