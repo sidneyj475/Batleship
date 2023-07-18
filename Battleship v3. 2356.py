@@ -12,7 +12,7 @@ def UserInput(grid):
     while(True):
         try:
             GuessRow = eval(input("\nGuess Row: "))
-            GuessColumn = eval(input("Guess Col: "))
+            GuessColumn = eval(input("Guess Colum: "))
             
             if GuessColumn <= grid and GuessRow <= grid:
                 return GuessRow-1, GuessColumn-1
@@ -21,43 +21,43 @@ def UserInput(grid):
         except: 
             print("Aim inside the grid.\n")
         
+print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 6 chances.")
 
-grid = int(input("Grid Size:"))
+grid = int(input("Choose Your Grid Size:"))
 
 board = []
 for i in range(grid):
     board.append(["O"] * grid)
 
 
-print("Let's Play Battleship!\n")
 
 
-ship_row, ship_col = makelo(board) 
-print(ship_row, ship_col)
+RowRow, ColCol = makelo(board) 
+print(RowRow, ColCol)
 
 for LAUNCH in range(4):
 
-    if LAUNCH == 3:
+    if LAUNCH == 5:
         print("Game Over.")
         board[GuessRow][GuessColumn] = "X"
         break
     
-    print("Launch", LAUNCH + 1)
+    print("Launch!", LAUNCH + 1)
     print_board(board)
     
     GuessRow, GuessColumn = UserInput(grid)
 
-    if GuessRow + 1 == ship_row and GuessColumn + 1 == ship_col:
-        print("\nWow! You sunk my ship!")
+    if GuessRow + 1 == RowRow and GuessColumn + 1 == ColCol:
+        print("\nWow! You sunk an enemy ship!")
         board[GuessRow][GuessColumn] = "X"
         print_board(board)
         print("")
         break
     
     else:
-        if board[GuessRow][GuessColumn] == "--":
-            print("\nYou already guessed that :|.")
+        if board[GuessRow][GuessColumn] == "-":
+            print("\n YOU ALREADY GUESSED THAT :|.")
             print(" ")
         else:
-            print("\n Haha you missed!")
-            board[GuessRow][GuessColumn] = "--"
+            print("\n Come on man! You MISSED!")
+            board[GuessRow][GuessColumn] = "-"
