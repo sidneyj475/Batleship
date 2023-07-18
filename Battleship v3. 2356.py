@@ -8,11 +8,11 @@ def print_board(board):
 def makelo(board):
     return random.randint(1, len(board)), random.randint(1, len(board[0]))
 
-def UserInput(grid):
+def inputthatthang(grid):
     while(True):
         try:
-            GuessRow = eval(input("\nGuess Row: "))
-            GuessColumn = eval(input("Guess Colum: "))
+            GuessRow = eval(input("Take a shot, Guess Row: "))
+            GuessColumn = eval(input("Now Guess Column: "))
             
             if GuessColumn <= grid and GuessRow <= grid:
                 return GuessRow-1, GuessColumn-1
@@ -33,7 +33,6 @@ for i in range(grid):
 
 
 RowRow, ColCol = makelo(board) 
-print(RowRow, ColCol)
 
 for LAUNCH in range(4):
 
@@ -42,10 +41,10 @@ for LAUNCH in range(4):
         board[GuessRow][GuessColumn] = "X"
         break
     
-    print("Launch!", LAUNCH + 1)
+    print("Launch", LAUNCH + 1,"!")
     print_board(board)
     
-    GuessRow, GuessColumn = UserInput(grid)
+    GuessRow, GuessColumn = inputthatthang(grid)
 
     if GuessRow + 1 == RowRow and GuessColumn + 1 == ColCol:
         print("\nWow! You sunk an enemy ship!")
