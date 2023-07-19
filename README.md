@@ -21,6 +21,7 @@ Create a Battleship game that can be ran without discrepancies for Robins AFB 40
 ### Installation
 
 No prerequsites required.
+Use python3 in terminal. 
 ****
 ## Contact and Running the File
 
