@@ -4,7 +4,7 @@
 #### Produced By: Kenyatta White and Sidney Johnson
 
 *****
-## Introduction
+## Introduction and Description
 
 
 This is our rendition of the game Battleship first created by Clifford von Wickler.
@@ -26,5 +26,7 @@ No prerequsites required.
 
 The correct file to use for gameplay is
 https://github.com/sidneyj475/Battleship/blob/main/BattleshipV6.py 
+
+*Instructions are provided within the game.*
 
 Kemyatta White and Sidney Johnson - sern_intern@projectsynergy.netcomorg
