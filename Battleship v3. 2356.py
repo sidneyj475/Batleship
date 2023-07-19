@@ -58,6 +58,11 @@ for i in range(grid):
 
 RowRowRow, ColColCol = makelo(board) 
 
+def cpuguess(board):
+    return random.randint(1, len(board)), random.randint(1, len(board[0]))
+
+#CPU=5
+
  # Loop for the users turn
 for LAUNCH in range(6):
 # Stores user guesses in a list, output is result of user launch. 
@@ -85,3 +90,14 @@ for LAUNCH in range(6):
         else:
             print("\n Come on man! You MISSED!")
             board[GuessRow][GuessColumn] = "-"
+            
+    for compguess in range(1):
+        print("CPU guessed:",(cpuguess(board)))
+        print(" ")
+        if cpuguess(board) == makelo(board):
+            print ("Your ship has been sunk! ;( ") 
+            print("Game Over.")
+            break
+
+        
+  
