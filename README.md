@@ -1,4 +1,6 @@
-# **Battleship on Island Icky! ![image](https://github.com/sidneyj475/Battleship/assets/138689679/1866e42f-c866-482c-80ac-afd496920d9e)**
+# **Battleship on Island Icky! 
+      ![image](https://github.com/sidneyj475/Battleship/assets/138689679/7ee11547-1191-457a-9777-dd2cd9a660e8)
+**
 #### Produced By: Kenyatta White and Sidney Johnson
 This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
 *****
