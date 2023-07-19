@@ -15,7 +15,7 @@ Create a Battleship game that can be ran without discrepancies.
 
 
 ## Getting Started
-*****
+
 ### Installation
 
 No prerequsites required.
