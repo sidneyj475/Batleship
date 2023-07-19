@@ -13,7 +13,7 @@ Battleship is a two-player tactical guessing game. Each player's fleet of warshi
 
 ****
 ## Goal
-Create a Battleship game that can be ran without discrepancies for Robins AFB 402 sWEG Internship- Summer 2023. 
+Create a Battleship game that can be ran without discrepancies for Robins AFB 402 SWEG Internship- Summer 2023. 
 ******
 
 ## Getting Started
