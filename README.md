@@ -7,7 +7,7 @@
 ## Introduction
 
 
-This is our rendition of the game Battleship by Milton Bradley.
+This is our rendition of the game Battleship first created by Clifford von Wickler.
 
 Battleship is a two-player tactical guessing game. Each player's fleet of warships is marked on regulated grids, which are used to play the game. The other player is not aware of the enemy fleets' positions. This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
 
