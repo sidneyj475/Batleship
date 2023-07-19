@@ -8,14 +8,18 @@ def print_board(board):
 ###We tried to allow for letting the user choose between random and deliberate placement, but we couldn't get it done in time and commented it out####
 
 def makelo(board):
-    #choice = (input("Would you like to place your ships?: y/n: "))
-    #if choice == ("n"):
-        return random.randint(1, len(board)), random.randint(1, len(board[0]))
-    #if choice == ("y"):
-        #inputrow=int(input("row: "))
-        #inputcol=int(input("col: "))
-        #if (inputrow > grid) and (inputcol > grid):
-            #print("enter valid inputs")
+    #while True:
+        #try:
+            #choice = (input("Would you like to place your ships?: y/n: "))
+            
+            #if choice == ("n"):
+                return random.randint(1, len(board)), random.randint(1, len(board[0]))
+            
+            #else:
+                #inputrow=int(input("row: "))
+                #inputcol=int(input("col: "))
+        #except: 
+            #print("Whaaaaaa")
 
         
 def inputthatthang(grid):
@@ -31,7 +35,7 @@ def inputthatthang(grid):
         except: 
             print("Aim inside the grid.\n")
         
-print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 6 chances.")
+print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 5 chances.")
 
 grid = int(input("Choose Your Grid Size:"))
 
