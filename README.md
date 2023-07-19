@@ -20,7 +20,7 @@ Create a Battleship game that can be ran without discrepancies.
 
 ### Installation
 
-You will need to run this with python3. 
+No prerequsites required.
 
 ## Running the File
 
