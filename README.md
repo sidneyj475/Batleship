@@ -2,14 +2,14 @@
 ![image](https://github.com/sidneyj475/Battleship/assets/138689679/7ee11547-1191-457a-9777-dd2cd9a660e8)
 
 #### Produced By: Kenyatta White and Sidney Johnson
-This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
+
 *****
 ## Introduction
 
 
 This is our rendition of the game Battleship by Milton Bradley.
 
-Battleship is a two-player tactical guessing game. Each player's fleet of warships is marked on regulated grids, which are used to play the game. The other player is not aware of the enemy fleets' positions. 
+Battleship is a two-player tactical guessing game. Each player's fleet of warships is marked on regulated grids, which are used to play the game. The other player is not aware of the enemy fleets' positions. This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
 
 ****
 ## Goal
