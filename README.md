@@ -17,7 +17,7 @@ Create a Battleship game that can be ran without discrepancies.
 ------------
 ## Getting Started
 
-###Installation
+### Installation
 
 You will need to run this with python3. 
 
