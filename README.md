@@ -1,26 +1,33 @@
 # **Battleship on Island Icky!**
-------------
-This is our rendition of the game Battleship by Milton Bradley.
+![image](https://github.com/sidneyj475/Battleship/assets/138689679/7ee11547-1191-457a-9777-dd2cd9a660e8)
 
-Battleship is a two-player tactical guessing game. Each player's fleet of warships is marked on regulated grids, which are used to play the game. The other player is not aware of the fleets' positions. 
+#### Produced By: Kenyatta White and Sidney Johnson
 
--------------
-## Introduction
+*****
+## Introduction and Description
 
-This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
 
-------------
-## Features
+This is our rendition of the game Battleship first created by Clifford von Wickler.
 
-pip install python3
+Battleship is a two-player tactical guessing game. Each player's fleet of warships is marked on regulated grids, which are used to play the game. The other player is not aware of the enemy fleets' positions. Players try to destroy their enemy's fleet. Our game takes place on Island Icky. Players will play against AI.
 
---------------
+****
+## Goal
+Create a Battleship game that can be ran without discrepancies for Robins AFB 402 SWEG Internship- Summer 2023. 
+******
 
-## Installation
+## Getting Started
 
-Coding language used is Python.
+### Installation
 
-![image](https://github.com/sidneyj475/Battleship/assets/138689679/d3d9b13a-5a37-4e73-9692-fb26153d5b51)
+No prerequsites required.
+Use python3 in terminal. 
+****
+## Contact and Running the File
 
-1. Go to the official Python download page. https://www.python.org/downloads/
-2. Click the appropriate link for your system to download the executable file: Windows installer (64-bit) or Windows installer (32-bit).
+The correct file to use for gameplay is
+**BattleshipV6.py**
+
+*Instructions are provided within the game.*
+
+Kemyatta White and Sidney Johnson - sern_intern@projectsynergy.netcomorg
