@@ -90,7 +90,7 @@ for LAUNCH in range(6):
         else:
             print("\n Come on man! You MISSED!")
             board[GuessRow][GuessColumn] = "-"
-            
+# Computer guess - If Computer Guess =  User's Inputted Board or User's Randomized Ship, the game ends.             
     for compguess in range(1):
         print("CPU guessed:",(cpuguess(board)))
         print(" ")
