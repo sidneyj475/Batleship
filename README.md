@@ -1,8 +1,10 @@
 # **Battleship on Island Icky!**
+#### Produced By: Kenyatta White and Sidney Johnson
+*****
 ## Introduction
 
 This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
-#### Produced By: Kenyatta White and Sidney Johnson
+
 ------------
 This is our rendition of the game Battleship by Milton Bradley.
 
