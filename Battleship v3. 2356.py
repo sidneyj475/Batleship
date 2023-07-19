@@ -1,11 +1,15 @@
-#Sidney & Kenyatta Battleship
+# Sidney & Kenyatta Battleship
+
 import random
 
+# Defining the Game Board
 def print_board(board):
     for z in board:
         print(" ".join(z))
 
-###We tried to allow for letting the user choose between random and deliberate placement, but we couldn't get it done in time and commented it out####
+'''We tried to allow for letting the user choose between random and deliberate placement,
+but we couldn't get it done in time and commented it out'''
+
 
 def makelo(board):
     #while True:
@@ -16,12 +20,13 @@ def makelo(board):
                 return random.randint(1, len(board)), random.randint(1, len(board[0]))
             
             #else:
-                #inputrow=int(input("row: "))
-                #inputcol=int(input("col: "))
+                #inputrow=int(input("Row: "))
+                #inputcol=int(input("Column: "))
         #except: 
             #print("Whaaaaaa")
 
-        
+# Definining user input, input will be the shot that the player takes at the computer's board.
+  
 def inputthatthang(grid):
     while(True):
         try:
@@ -33,23 +38,29 @@ def inputthatthang(grid):
             else:
                 print("Seems like you're aiming for failure. Try again...\n")
         except: 
-            print("Aim inside the grid.\n")
-        
+                print("Aim inside the grid.\n")
+ # Game Intro       
+ 
 print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 5 chances.")
 
+# User defines how large board will be. The board size will be the same for both players (user and computer)
+
 grid = int(input("Choose Your Grid Size:"))
+
+# Board display is made
 
 board = []
 for i in range(grid):
     board.append(["O"] * grid)
 
 
+# Variable to represent rows and columns inside the board
 
 RowRowRow, ColColCol = makelo(board) 
 
-
+ # Loop for the users turn
 for LAUNCH in range(6):
-
+# Stores user guesses in a list, output is result of user launch. 
     if LAUNCH == 5:
         print("Game Over.")
         board[GuessRow][GuessColumn] = "X"
