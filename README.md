@@ -3,18 +3,18 @@
 This is our rendition of the game Battleship by Milton Bradley.
 
 -------------
-# Introduction
+## Introduction
 
 This game takes place on Island Icky. Players try to destroy their enemy's fleet. Players will play against AI.
 
 ------------
-# Features
+## Features
 
 pip install python3
 
 --------------
 
-# Installation
+## Installation
 
 Coding language used is Python.
 
