@@ -22,7 +22,9 @@ Create a Battleship game that can be ran without discrepancies.
 
 No prerequsites required.
 
-## Running the File
+## Contact and Running the File
 
 The correct file to use for gameplay is
 https://github.com/sidneyj475/Battleship/blob/main/BattleshipV6.py 
+
+Kemyatta White and Sidney Johnson - sern_intern@projectsynergy.netcomorg
