@@ -1,2 +1,1 @@
-# Battleship
-Battleship game
+Battleship on Island Icky!
