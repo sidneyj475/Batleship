@@ -86,7 +86,7 @@ for LAUNCH in range(6):
         print("\nWow! You sunk an enemy ship!")
         board2[GuessRow][GuessColumn] = "X"
         print_board2(board2)
-        print("Game Over!")
+        print("You Won! \nGame Over!")
         break
     
     else:
