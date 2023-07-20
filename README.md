@@ -26,7 +26,7 @@ Use python3 in terminal.
 ## Contact and Running the File
 
 The correct file to use for gameplay is
-**BattleshipV6.py**
+**BattleshipV7.py**
 
 *Instructions are provided within the game.*
 
