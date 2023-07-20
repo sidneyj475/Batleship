@@ -15,7 +15,7 @@ def print_board2(board2):
 but we couldn't get it done in time and commented it out'''
 
 
-def makelo(board):
+def makelo(board2):
     #while True:
             #choice = (input("Would you like to place your ships?: y/n: "))
             
@@ -27,31 +27,10 @@ def makelo(board):
              #   inputcol=int(input("Column: "))
             #break
 
-def makelo2(board):
-    #while True:
-            #choice = (input("Would you like to place your ships?: y/n: "))
+def makelo2(board2):
+    return random.randint(1, len(board)), random.randint(1, len(board[0]))
             
-            #if choice == ("n"):
-                return random.randint(1, len(board)), random.randint(1, len(board[0]))
-            
-            #elif choice == ("y"):
-            #    inputrow=int(input("Row: "))
-             #   inputcol=int(input("Column: "))
-            #break
-
-def makelo3(board):
-    #while True:
-            #choice = (input("Would you like to place your ships?: y/n: "))
-            
-            #if choice == ("n"):
-                return random.randint(1, len(board)), random.randint(1, len(board[0]))
-            
-            #elif choice == ("y"):
-            #    inputrow=int(input("Row: "))
-             #   inputcol=int(input("Column: "))
-            #break
 # Definining user input, input will be the shot that the player takes at the computer's board.
-           
 def inputthatthang(grid):
     while(True):
         try:
@@ -93,8 +72,6 @@ def cpuguess(board):
 
 #CPU=5
 print("Titanico:",(makelo(board)))
-print("Great Vick:",(makelo2(board)))
-print("Arizona II:",(makelo3(board)))
  # Loop for the users turn
 for LAUNCH in range(6):
 # Stores user guesses in a list, output is result of user launch. 
@@ -134,21 +111,9 @@ for LAUNCH in range(6):
         print("CPU guessed:",cguess)
         print(" ")
         
-
         if cguess == makelo(board):
-            print ("Titanico has been sunk! ;( ") 
-            board[cguess] = "X"
-
-        if cguess == makelo2(board):
-            print ("Great Vick has been sunk! ;( ")
-            board[cguess] = "X"
-            
-        if cguess == makelo3(board):
-            print ("Arizona II has been sunk! ;( ") 
+            print ("Titanico has been sunk! ;( \n Game Over.") 
             board[cguess] = int("X")
-    
-        if (makelo(board)) and (makelo2(board)) and (makelo3(board)) == "X":
-            print("All of your ships have been sunk! \n Game Over.")
             break
         #else: 
             if board[cguess] == "-":
