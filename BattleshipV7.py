@@ -15,7 +15,8 @@ def print_board2(board2):
 but we couldn't get it done in time and commented it out'''
 
  # We tried to use a flip coin function to determine ship length and orientation. 
- # Issues- we don't know how to integrate the function into our code. If we were to know how 
+ # Issues- we don't know how to integrate the function into our code.
+ 
 ########
 def shiplength(RowRowRow, ColColCol, board):
     while True: 
@@ -38,12 +39,12 @@ def shiplength(RowRowRow, ColColCol, board):
             break
 
 #######
-def makelo(board2):
+def makelo(board):
     #while True:
             #choice = (input("Would you like to place your ships?: y/n: "))
             
             #if choice == ("n"):
-                return random.randint(1, len(board)), random.randint(1, len(board[0]))
+                return (random.randint(1, len(board)), random.randint(1, len(board[0])),  random.randint(1, len(board[1])))
             
             #elif choice == ("y"):
             #    inputrow=int(input("Row: "))
@@ -51,7 +52,7 @@ def makelo(board2):
             #break
 
 def makelo2(board2):
-    return random.randint(1, len(board)), random.randint(1, len(board[0]))
+    return random.randint(1, len(board2)), random.randint(1, len(board2[0]))
             
 # Definining user input, input will be the shot that the player takes at the computer's board.
 def inputthatthang(grid):
