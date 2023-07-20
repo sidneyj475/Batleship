@@ -14,7 +14,30 @@ def print_board2(board2):
 '''We tried to allow for letting the user choose between random and deliberate placement,
 but we couldn't get it done in time and commented it out'''
 
+ # We tried to use a flip coin function to determine ship length and orientation. 
+ # Issues- we don't know how to integrate the function into our code. If we were to know how 
+########
+def shiplength(RowRowRow, ColColCol, board):
+    while True: 
+#randomize h/v 0 or 1 
+        random.randint([0,1])
+        if random.randint == 1:
+            try:
+                (RowRowRow, ColColCol + 1)
+                return True
+            except:
+                pass
+        if random.randint == 0:
+            try:
+                (RowRowRow + 1, ColColCol)
+                return True
+            except:
+                pass
+        board, success = shiplength(RowRowRow, ColColCol, board)
+        if success:
+            break
 
+#######
 def makelo(board2):
     #while True:
             #choice = (input("Would you like to place your ships?: y/n: "))
