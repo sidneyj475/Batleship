@@ -18,25 +18,6 @@ but we couldn't get it done in time and commented it out'''
  # Issues- we don't know how to integrate the function into our code.
  
 ########
-def shiplength(RowRowRow, ColColCol, board):
-    while True: 
-#randomize h/v 0 or 1 
-        random.randint([0,1])
-        if random.randint == 1:
-            try:
-                (RowRowRow, ColColCol + 1)
-                return True
-            except:
-                pass
-        if random.randint == 0:
-            try:
-                (RowRowRow + 1, ColColCol)
-                return True
-            except:
-                pass
-        board, success = shiplength(RowRowRow, ColColCol, board)
-        if success:
-            break
 
 #######
 def makelo(board):
@@ -44,7 +25,7 @@ def makelo(board):
             #choice = (input("Would you like to place your ships?: y/n: "))
             
             #if choice == ("n"):
-                return (random.randint(1, len(board)), random.randint(1, len(board[0])),  random.randint(1, len(board[1])))
+                return random.randint(1, len(board)), random.randint(1, len(board[0]))
             
             #elif choice == ("y"):
             #    inputrow=int(input("Row: "))
@@ -52,8 +33,41 @@ def makelo(board):
             #break
 
 def makelo2(board2):
-    return random.randint(1, len(board2)), random.randint(1, len(board2[0]))
-            
+          while True:
+            RowRowRow = random.randrange(0,10)
+            ColColCol = random.randrange(0,10)
+            dir = random.randrange(0,2) # 0 = vertical, 1 = horizontal
+            if Func(RowRowRow, ColColCol, 5, dir):
+                add(RowRowRow, ColColCol, 5, dir)
+                break
+            while True:
+                RowRowRow = random.randrange(0,10)
+                ColColCol = random.randrange(0,10)
+                dir = random.randrange(0,2) # 0 = vertical, 1 = horizontal
+                if Func(RowRowRow, ColColCol, 4, dir):
+                    add(RowRowRow, ColColCol, 4, dir)
+                    break
+            while True:
+                RowRowRow = random.randrange(0,10)
+                ColColCol = random.randrange(0,10)
+                dir = random.randrange(0,2) # 0 = vertical, 1 = horizontal
+                if Func(RowRowRow, ColColCol, 3, dir):
+                    add(RowRowRow, ColColCol, 3, dir)
+                    break
+            while True:
+                RowRowRow = random.randrange(0,10)
+                ColColCol = random.randrange(0,10)
+                dir = random.randrange(0,2) # 0 = vertical, 1 = horizontal
+                if Func(RowRowRow, ColColCol, 3, dir):
+                    add(RowRowRow, ColColCol, 3, dir)
+                    break
+            while True:
+                RowRowRow = random.randrange(0,10)
+                ColColCol = random.randrange(0,10)
+                dir = random.randrange(0,2) # 0 = vertical, 1 = horizontal
+                if Func(RowRowRow, ColColCol, 2, dir):
+                    add(RowRowRow, ColColCol, 2, dir)
+                    break       
 # Definining user input, input will be the shot that the player takes at the computer's board.
 def inputthatthang(grid):
     while(True):
