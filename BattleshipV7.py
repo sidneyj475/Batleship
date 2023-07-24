@@ -88,9 +88,9 @@ for o in range(grid2):
     board2.append(["O"] * grid2)
 
 # Variable to represent rows and columns inside the board
-
 RowRowRow, ColColCol = makelo(board) 
 
+# Computer guess coordinate/ship
 def cpuguess(board):
     return random.randint(1, len(board)), random.randint(1, len(board[0]))
 
@@ -127,7 +127,7 @@ for LAUNCH in range(6):
             print(" ")
 
 # Computer guess - If Computer Guess =  User's Inputted Board or User's Randomized Ship, the game ends.    
-    for COMPGUESS in range(1):
+    for COMPGUESS in range(board2):
         print("CPU Turn:")
         print_board(board)
         
