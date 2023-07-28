@@ -1,6 +1,6 @@
 # Sidney & Kenyatta Battleship
-
 import random
+
 
 # Defining the Game Board
 def print_board(board):
@@ -18,6 +18,31 @@ but we couldn't get it done in time and commented it out'''
  # Issues- we don't know how to integrate the function into our code.
  
 ########
+
+ # Game Intro       
+ 
+print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 5 chances.")
+
+#######
+
+
+# User defines how large board will be. The board size will be the same for both players (user and computer)
+
+grid = int(input("Choose Your Grid Size: "))
+
+grid2 = grid
+
+def makelo(board):
+    while True:
+            choice = (input("Would you like to place your ships?: y/n: "))
+            
+            if choice == ("n"):
+                return random.randint(1, len(board)), random.randint(1, len(board[0]))
+            
+            elif choice == ("y"):
+                inputrow=int(input("Row: "))
+                inputcol=int(input("Column: "))
+            break
 def shiplength(RowRowRow, ColColCol, board):
     while True: 
 #randomize h/v 0 or 1 
@@ -37,19 +62,8 @@ def shiplength(RowRowRow, ColColCol, board):
         board, success = shiplength(RowRowRow, ColColCol, board)
         if success:
             break
+        
 
-#######
-def makelo(board):
-    #while True:
-            #choice = (input("Would you like to place your ships?: y/n: "))
-            
-            #if choice == ("n"):
-                return random.randint(1, len(board)), random.randint(1, len(board[0]))
-            
-            #elif choice == ("y"):
-            #    inputrow=int(input("Row: "))
-             #   inputcol=int(input("Column: "))
-            #break
 
 def makelo2(board2):
     return random.randint(1, len(board2)), random.randint(1, len(board2[0]))
@@ -67,16 +81,17 @@ def inputthatthang(grid):
                 print("Seems like you're aiming for failure. Try again...\n")
         except: 
                 print("Aim inside the grid.\n")
- # Game Intro       
- 
-print("Let's Play Battleship! Your enemy is on water. They're coming at you and FAST! Do your best to destroy their fleet. You have 5 chances.")
+                
+variable = input("Enter a row A-J: ")
+def convert_to_letter(variable):
+    num = ord(variable) - 65
+    return num
 
-# User defines how large board will be. The board size will be the same for both players (user and computer)
+def convert_to_number(variable):
+    letter = chr(variable + 1)
+    return letter
 
-grid = int(input("Choose Your Grid Size: "))
-
-grid2 = grid
-
+print (convert_to_letter(variable))
 # Board display is made
 
 board = []
@@ -148,3 +163,7 @@ for LAUNCH in range(6):
                 board[cguess] = "-"
                 print(" ")
 
+# ord('A') makes int 65
+# -65 = index at 0
+
+# chr(65) outputs A
