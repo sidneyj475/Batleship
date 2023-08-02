@@ -43,6 +43,7 @@ def makelo(board):
                 inputrow=int(input("Row: "))
                 inputcol=int(input("Column: "))
             break
+    
 def shiplength(RowRowRow, ColColCol, board):
     while True: 
 #randomize h/v 0 or 1 
